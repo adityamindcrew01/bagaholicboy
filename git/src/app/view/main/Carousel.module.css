@@ -1,0 +1,63 @@
+.carouselWrapper {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; */
+    margin: 50px 30px;
+    text-align: center;
+
+  }
+  
+  .swiper-slide img {
+    width: 100%; 
+    height: auto; 
+  }
+  .imageSlider{
+    border-radius: 50px;
+  }
+  .buttonTags{
+
+    border: 1px solid grey;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+ 
+  }
+  
+  .buttonTitle{
+
+   
+    color: black;
+    font-size: 50px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+ 
+  }
+  
+  /* Navigation buttons below the image */
+  .navButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Space between image and buttons */
+  }
+  
+  .prevButton,
+  .nextButton {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: #555;
+  }
+  
