@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "chanelbannerbigs",
+  "info": {
+    "singularName": "chanelbannerbig",
+    "pluralName": "chanelbannerbigs",
+    "displayName": "CHANELBANNERBIG"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

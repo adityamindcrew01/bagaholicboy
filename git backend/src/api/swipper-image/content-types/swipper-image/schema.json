@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "swipper_images",
+  "info": {
+    "singularName": "swipper-image",
+    "pluralName": "swipper-images",
+    "displayName": "SwipperImage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Tags": {
+      "type": "string",
+      "required": false
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

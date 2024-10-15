@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bags_lists",
+  "info": {
+    "singularName": "bags-list",
+    "pluralName": "bags-lists",
+    "displayName": "bagsList"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "tag": {
+      "type": "string"
+    }
+  }
+}
