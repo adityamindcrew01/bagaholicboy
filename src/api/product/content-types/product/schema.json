@@ -28,6 +28,29 @@
         "images",
         "files"
       ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "image2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "path": {
+      "type": "string"
     }
   }
 }

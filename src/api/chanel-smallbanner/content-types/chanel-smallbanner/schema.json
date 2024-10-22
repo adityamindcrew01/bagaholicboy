@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "chanel_smallbanners",
+  "info": {
+    "singularName": "chanel-smallbanner",
+    "pluralName": "chanel-smallbanners",
+    "displayName": "ChanelSmallbanner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "channelsmallbanner2s",
+  "info": {
+    "singularName": "channelsmallbanner2",
+    "pluralName": "channelsmallbanner2s",
+    "displayName": "channelsmallbanner2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bags_lists",
+  "info": {
+    "singularName": "bags-list",
+    "pluralName": "bags-lists",
+    "displayName": "bagsList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tag": {
+      "type": "string"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

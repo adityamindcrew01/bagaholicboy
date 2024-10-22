@@ -1,0 +1,44 @@
+
+.textFooter {
+    color: #000 !important;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight: 500;
+   line-height: 1.1;
+    margin-left: 4px;
+  
+  }
+  
+  @media (min-width: 240px) {
+    .textFooter {
+      font-size: 28px;
+      color: green;
+      /* Font size for small screens (640px and up) */
+    }
+  }
+  
+  
+  @media (min-width: 640px) {
+    .textFooter {
+      font-size: 28px;
+      color: red;
+      /* Font size for small screens (640px and up) */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .textFooter {
+      font-size: 22px;
+      color: pink;
+      /* Font size for medium screens (768px and up) */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .textFooter {
+      font-size: 25px;
+      color: blue;
+  
+    }
+  }
+  
+  

@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "common_products",
+  "info": {
+    "singularName": "common-product",
+    "pluralName": "common-products",
+    "displayName": "CommonProduct",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "tag": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "image2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

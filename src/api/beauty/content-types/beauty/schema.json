@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beauties",
+  "info": {
+    "singularName": "beauty",
+    "pluralName": "beauties",
+    "displayName": "Beauty",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tags": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "image2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

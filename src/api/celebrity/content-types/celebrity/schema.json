@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "celebrities",
+  "info": {
+    "singularName": "celebrity",
+    "pluralName": "celebrities",
+    "displayName": "celebrity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tag": {
+      "type": "string"
+    },
+    "pathlink": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "image2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

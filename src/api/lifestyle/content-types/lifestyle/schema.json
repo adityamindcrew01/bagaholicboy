@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lifestyles",
+  "info": {
+    "singularName": "lifestyle",
+    "pluralName": "lifestyles",
+    "displayName": "lifestyle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "path": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    }
+  }
+}

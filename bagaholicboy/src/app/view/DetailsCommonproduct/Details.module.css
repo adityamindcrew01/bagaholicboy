@@ -1,0 +1,361 @@
+/* .buttonDetailsText{
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.buttonDetailsText:hover{
+   background-color: #000;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.detailsTitle{
+    color: #000 !important;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 4px;
+    font-size: 4rem;
+    width: 50%;
+    line-height: 1;
+    margin-bottom: 10px;
+
+   
+}
+.dateDetails{
+    color: #000 !important;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin: 0px 250px;
+}
+.imageDetails{
+    width: 50%;
+    border-radius: 20px;
+}
+.imageName{
+    color: #d2d2d2 !important;
+    font-weight: 500;
+    
+    
+   
+   
+}
+.descriptionTitle{
+    color: #000 !important;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-left: 4px;
+    font-size: 1.3em;
+   
+    width: 50%;
+
+   
+
+}
+.UnderlineText{
+    color: #000 !important;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-left: 4px;
+    font-size: 1.3em;
+   
+    width: 50%;
+
+    margin-bottom: 25px;
+
+
+    text-decoration: underline;        
+    text-decoration-thickness: 2px;   
+    text-underline-offset: 2px;       
+
+    padding-bottom: 2px;               
+ 
+
+}
+
+.UnderlineText2{
+    color: #2f2e2e !important;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-left: 4px;
+    font-size: 1.3em;
+    
+    width: 50%;
+
+    margin-bottom: 10px;
+
+
+    text-decoration: underline;        
+    text-decoration-thickness: 2px;   
+    text-underline-offset: 2px;        
+   
+    padding-bottom: 2px;               
+}
+.shareText{
+    color: #000 !important;
+     font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif; 
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 4px;
+    font-size: 1.3em;
+   
+    width: 50%;
+    letter-spacing: -.03em;
+
+}
+.buttonicon{
+    border: 1.3px solid rgb(179, 176, 176);
+    padding: 13px;
+    border-radius: 16px;
+    color: black;
+
+}
+.icon{
+font-size: 20px;
+
+
+}
+.buttonicon:hover{
+    background-color: #000;
+    color: white;
+   
+}
+.buttoncontenet{
+    border: 1.7px solid rgb(12, 12, 12);
+    padding: 5px 13px;
+    border-radius: 20px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+.buttoncontenet:hover{
+    border: 1.7px solid rgb(12, 12, 12);
+   background-color: #000;
+    color: white;
+
+} */
+
+
+
+
+.buttonDetailsText{
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 20px;
+    padding: 8px 14px;
+    /* font-size: 18px; */
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.buttonDetailsText:hover{
+    background-color: #000;
+    color: white;
+}
+
+@media only screen and (max-width: 3901px) and (min-width: 901px) {
+    .buttonDetailsText{
+        border: 1px solid rgb(224, 223, 223);
+        border-radius: 20px;
+        padding: 8px 14px;
+        font-size: 18px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 0px) {
+    .buttonDetailsText{
+        border: 1px solid rgb(224, 223, 223);
+        border-radius: 20px;
+        padding: 8px 14px;
+        font-size: 10px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+
+.detailsTitle{
+    color: #000 !important;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 53%; 
+    line-height: 1;
+    margin-bottom: 10px;
+
+   
+}
+
+@media only screen and (max-width: 900px) and (min-width: 0px) {
+    .detailsTitle{
+        color: #000 !important;
+        font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+        font-weight: 500;
+        margin-top: 10px;
+        width: 100%; 
+        line-height: 1;
+        margin-bottom: 10px;
+    
+       
+    }
+}
+
+@media only screen and (max-width: 3901px) and (min-width: 901px) {
+    .detailsTitle{
+        color: #000 !important;
+        font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+        font-weight: 500;
+        margin-top: 10px;
+        width: 50%; 
+        line-height: 1;
+        margin-bottom: 10px;
+    
+       
+    }
+}
+
+.shareText{
+    color: #000 !important;
+     font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif; 
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 4px;
+    font-size: 1.3em;
+   
+    width: 100%;
+    letter-spacing: -.03em;
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 0px) {
+    .shareText{
+        color: #000 !important;
+         font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif; 
+        font-weight: 100;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 4px;
+        font-size: 1.3em;
+       
+        width: 100%;
+        letter-spacing: -.03em;
+        text-align: center;
+    
+    }
+}
+
+
+
+
+.dateDetails{
+    color: #000 !important;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight: 500;
+}
+
+.imageDetails{
+    width: 100%; /* Responsive width for smaller screens */
+    border-radius: 20px;
+}
+
+.descriptionTitle{
+    color: #000 !important;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight: 100;
+    margin-top: 30px;
+    /* width: 100%;  */
+   
+}
+
+@media only screen and (max-width: 900px) and (min-width: 0px) {
+    .descriptionTitle{
+        color: #000 !important;
+        font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+        font-weight: 100;
+        margin-top: 30px;
+        /* width: 100%;  */
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 3901px) and (min-width: 901px) {
+    .descriptionTitle{
+        color: #000 !important;
+        font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+        font-weight: 100;
+        margin-top: 30px;
+        /* width: 100%;  */
+        width: 50%;
+    }
+}
+
+
+
+.UnderlineText, .UnderlineText2{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: #000;
+    padding-bottom: 20px;
+    font-family: Rhymes Display, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+
+}
+@media only screen and (max-width: 3901px) and (min-width: 901px) {
+    .UnderlineText, .UnderlineText2{
+        font-size: 20px;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 0px) {
+    .UnderlineText, .UnderlineText2{
+        font-size: 13px;
+        width: 100%;
+    }
+}
+
+.buttonicon{
+    border: 1.3px solid rgb(179, 176, 176);
+    padding: 10px;
+    border-radius: 16px;
+    color: black;
+}
+
+.buttonicon:hover{
+    background-color: #000;
+    color: white;
+}
+
+.icon{
+    font-size: 20px;
+}
+
+.buttoncontenet{
+    border: 1.7px solid rgb(12, 12, 12);
+    padding: 5px 13px;
+    border-radius: 20px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.buttoncontenet:hover{
+    background-color: #000;
+    color: white;
+}

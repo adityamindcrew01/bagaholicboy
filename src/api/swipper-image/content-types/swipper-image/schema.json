@@ -4,7 +4,8 @@
   "info": {
     "singularName": "swipper-image",
     "pluralName": "swipper-images",
-    "displayName": "SwipperImage"
+    "displayName": "SwipperImage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,26 @@
       "required": false
     },
     "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "path": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "image2": {
       "allowedTypes": [
         "images",
         "files",
@@ -27,8 +48,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true,
-      "required": true
+      "multiple": false
     }
   }
 }

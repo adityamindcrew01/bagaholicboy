@@ -580,6 +580,73 @@ export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiBagsListBagsList extends Struct.CollectionTypeSchema {
+  collectionName: 'bags_lists';
+  info: {
+    singularName: 'bags-list';
+    pluralName: 'bags-lists';
+    displayName: 'bagsList';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    tag: Schema.Attribute.String;
+    description2: Schema.Attribute.Text;
+    description: Schema.Attribute.Text;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    date: Schema.Attribute.Date;
+    path: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::bags-list.bags-list'
+    >;
+  };
+}
+
+export interface ApiBeautyBeauty extends Struct.CollectionTypeSchema {
+  collectionName: 'beauties';
+  info: {
+    singularName: 'beauty';
+    pluralName: 'beauties';
+    displayName: 'Beauty';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    tags: Schema.Attribute.String;
+    path: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    date: Schema.Attribute.Date;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::beauty.beauty'>;
+  };
+}
+
 export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   collectionName: 'categories';
   info: {
@@ -611,6 +678,71 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCelebrityCelebrity extends Struct.CollectionTypeSchema {
+  collectionName: 'celebrities';
+  info: {
+    singularName: 'celebrity';
+    pluralName: 'celebrities';
+    displayName: 'celebrity';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    tag: Schema.Attribute.String;
+    pathlink: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    date: Schema.Attribute.Date;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::celebrity.celebrity'
+    >;
+  };
+}
+
+export interface ApiChanelSmallbannerChanelSmallbanner
+  extends Struct.SingleTypeSchema {
+  collectionName: 'chanel_smallbanners';
+  info: {
+    singularName: 'chanel-smallbanner';
+    pluralName: 'chanel-smallbanners';
+    displayName: 'ChanelSmallbanner';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    path: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::chanel-smallbanner.chanel-smallbanner'
+    >;
+  };
+}
+
 export interface ApiChanelbannerbigChanelbannerbig
   extends Struct.SingleTypeSchema {
   collectionName: 'chanelbannerbigs';
@@ -618,12 +750,14 @@ export interface ApiChanelbannerbigChanelbannerbig
     singularName: 'chanelbannerbig';
     pluralName: 'chanelbannerbigs';
     displayName: 'CHANELBANNERBIG';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    path: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
@@ -635,6 +769,107 @@ export interface ApiChanelbannerbigChanelbannerbig
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::chanelbannerbig.chanelbannerbig'
+    >;
+  };
+}
+
+export interface ApiChannelsmallbanner2Channelsmallbanner2
+  extends Struct.SingleTypeSchema {
+  collectionName: 'channelsmallbanner2s';
+  info: {
+    singularName: 'channelsmallbanner2';
+    pluralName: 'channelsmallbanner2s';
+    displayName: 'channelsmallbanner2';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    path: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::channelsmallbanner2.channelsmallbanner2'
+    >;
+  };
+}
+
+export interface ApiCommonProductCommonProduct
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'common_products';
+  info: {
+    singularName: 'common-product';
+    pluralName: 'common-products';
+    displayName: 'CommonProduct';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
+    tag: Schema.Attribute.String & Schema.Attribute.Required;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    date: Schema.Attribute.Date;
+    path: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::common-product.common-product'
+    >;
+  };
+}
+
+export interface ApiFashionListFashionList extends Struct.CollectionTypeSchema {
+  collectionName: 'fashion_lists';
+  info: {
+    singularName: 'fashion-list';
+    pluralName: 'fashion-lists';
+    displayName: 'fashionList';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    tag: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    date: Schema.Attribute.Date;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    path: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::fashion-list.fashion-list'
     >;
   };
 }
@@ -695,6 +930,147 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiJewelleryJewellery extends Struct.CollectionTypeSchema {
+  collectionName: 'jewelleries';
+  info: {
+    singularName: 'jewellery';
+    pluralName: 'jewelleries';
+    displayName: 'Jewellery';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    date: Schema.Attribute.Date;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    path: Schema.Attribute.String;
+    tags: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::jewellery.jewellery'
+    >;
+  };
+}
+
+export interface ApiLifestyleLifestyle extends Struct.CollectionTypeSchema {
+  collectionName: 'lifestyles';
+  info: {
+    singularName: 'lifestyle';
+    pluralName: 'lifestyles';
+    displayName: 'lifestyle';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    date: Schema.Attribute.Date;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    path: Schema.Attribute.String;
+    tag: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::lifestyle.lifestyle'
+    >;
+  };
+}
+
+export interface ApiMoretoloveMoretolove extends Struct.CollectionTypeSchema {
+  collectionName: 'moretoloves';
+  info: {
+    singularName: 'moretolove';
+    pluralName: 'moretoloves';
+    displayName: 'moretolove';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    path: Schema.Attribute.String;
+    date: Schema.Attribute.Date;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    tag: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::moretolove.moretolove'
+    >;
+  };
+}
+
+export interface ApiMoretolovelistMoretolovelist
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'moretolovelists';
+  info: {
+    singularName: 'moretolovelist';
+    pluralName: 'moretolovelists';
+    displayName: 'moretolovelist';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    date: Schema.Attribute.Date;
+    path: Schema.Attribute.String;
+    tag: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::moretolovelist.moretolovelist'
+    >;
+  };
+}
+
 export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   collectionName: 'products';
   info: {
@@ -711,6 +1087,11 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     tag: Schema.Attribute.String & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    date: Schema.Attribute.Date;
+    path: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
@@ -733,6 +1114,7 @@ export interface ApiSwipperImageSwipperImage
     singularName: 'swipper-image';
     pluralName: 'swipper-images';
     displayName: 'SwipperImage';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -745,6 +1127,10 @@ export interface ApiSwipperImageSwipperImage
       true
     > &
       Schema.Attribute.Required;
+    path: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
@@ -757,6 +1143,36 @@ export interface ApiSwipperImageSwipperImage
       'oneToMany',
       'api::swipper-image.swipper-image'
     >;
+  };
+}
+
+export interface ApiWatchWatch extends Struct.CollectionTypeSchema {
+  collectionName: 'watches';
+  info: {
+    singularName: 'watch';
+    pluralName: 'watches';
+    displayName: 'watch';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    date: Schema.Attribute.Date;
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    path: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::watch.watch'>;
   };
 }
 
@@ -1138,12 +1554,24 @@ declare module '@strapi/strapi' {
       'api::about.about': ApiAboutAbout;
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
+      'api::bags-list.bags-list': ApiBagsListBagsList;
+      'api::beauty.beauty': ApiBeautyBeauty;
       'api::category.category': ApiCategoryCategory;
+      'api::celebrity.celebrity': ApiCelebrityCelebrity;
+      'api::chanel-smallbanner.chanel-smallbanner': ApiChanelSmallbannerChanelSmallbanner;
       'api::chanelbannerbig.chanelbannerbig': ApiChanelbannerbigChanelbannerbig;
+      'api::channelsmallbanner2.channelsmallbanner2': ApiChannelsmallbanner2Channelsmallbanner2;
+      'api::common-product.common-product': ApiCommonProductCommonProduct;
+      'api::fashion-list.fashion-list': ApiFashionListFashionList;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
+      'api::jewellery.jewellery': ApiJewelleryJewellery;
+      'api::lifestyle.lifestyle': ApiLifestyleLifestyle;
+      'api::moretolove.moretolove': ApiMoretoloveMoretolove;
+      'api::moretolovelist.moretolovelist': ApiMoretolovelistMoretolovelist;
       'api::product.product': ApiProductProduct;
       'api::swipper-image.swipper-image': ApiSwipperImageSwipperImage;
+      'api::watch.watch': ApiWatchWatch;
       'admin::permission': AdminPermission;
       'admin::user': AdminUser;
       'admin::role': AdminRole;
